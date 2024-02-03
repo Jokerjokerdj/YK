@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+.sword1{
+    position: fixed;
+    top:35%;
+    left:40%;
+    width: 230px;
+    height: 200px;
+    opacity: 60%;
+    transform: rotate(180deg);
+    animation: fadein 5s  infinite;
+    z-index: -1000px;
+
+}
+.sword2{
+    position: fixed;
+    top:35%;
+    right:39%;
+    width: 230px;
+    height: 200px;
+    transform: rotate(-80deg);
+    opacity: 60%;
+    animation: fadein 5s  infinite;
+    z-index: -1000px;
+
+}
+@media(max-width:763px){
+    .sword1{
+        left:30%;
+    }
+    .sword2{
+        right: 29%;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 60%;
+      }
+      to {
+        opacity: 40%;
+      }
+}
+
+.head{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:-20px;
+    background-image:linear-gradient(to right top,blue,rgb(192, 24, 158));
+   
+}
+.head a{
+    text-decoration: none;
+}
+.head h1 {
+    position: relative;
+    top: 7px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.moo1{   
+    position: absolute;
+    left: 35%;
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: #333;
+}
+.moo1 img{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+@media (max-width:716px) {
+    .moo1{
+        left: 20%;
+    }
+}
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:87vh;
+
+}
+
+h4{
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.about{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 10vh;
+}
+.don{
+    position: relative;
+    top:50vh;
+    color: white;
+}
+.don button{
+    position: relative;
+    margin-left: 25vh;
+    padding: 12px;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,blue,rgb(195, 0, 255));
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    left:-5vh;
+}
+.don button:hover{
+    cursor: pointer;
+    box-shadow: -1px -2px 15px blue,1px 2px 15px rgb(195, 0, 255) ;
+    opacity: 70%;
+}
+
+.end{
+    position: relative;
+    background-color: blueviolet;
+    padding: 5vh;
+    top:145vh;
+}
+

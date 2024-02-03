@@ -1,0 +1,143 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+.sword1{
+    position: fixed;
+    top:35%;
+    left:40%;
+    width: 230px;
+    height: 200px;
+    opacity: 60%;
+    transform: rotate(180deg);
+    animation: fadein 5s  infinite;
+    z-index: -1000px;
+}
+.sword2{
+    position: fixed;
+    top:35%;
+    right:39%;
+    width: 230px;
+    height: 200px;
+    transform: rotate(-80deg);
+    opacity: 60%;
+    animation: fadein 5s  infinite;
+    z-index: -1000px;
+
+}
+@media(max-width:763px){
+    .sword1{
+        left:30%;
+    }
+    .sword2{
+        right: 29%;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 60%;
+      }
+      to {
+        opacity: 40%;
+      }
+}
+
+.head{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:-20px;
+    background-image:linear-gradient(to right top,blue,rgb(192, 24, 158));
+}
+.head a{
+    text-decoration: none;
+}
+.head h1 {
+      position: relative;
+      top: 7px;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mo1{   
+    position: absolute;
+    left: 30px;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #333;
+}
+.mo1 img{
+    width: 200px;
+    height: 250px;
+    border-radius:15px ;
+    transition: all 0.5s;
+    box-shadow: 0 -2px 5px #333, 0 2px 5px #333;
+
+}
+
+.mo1 img:hover{
+    opacity: 80%;
+    cursor: pointer;
+    box-shadow: -1px -2px 10px #ffffff, 1px 2px 10px #ffffff;
+
+}
+
+
+.alert {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to right bottom , #e600ff, #0003cf);
+    top:7vh;
+    left:3vh;
+    transition: all 0.5s;
+    text-shadow: 0 0 10px black;
+    opacity: 60%;
+    position: fixed;
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+    z-index: 1000;
+    }
+    .im{
+        position: relative;
+        margin-top: 50px;
+        width: 400px;
+        height: 200vh;
+        background-color: #3d3d3d;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px #6c6c6c ,0px 0px 15px #6c6c6c;
+
+    }
+    .im video{
+        animation: image 2s ease-in;
+        border-radius: 15px;
+    }
+.alert:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 100;
+        background-color: #3d3d3d;
+    }
+    to {
+        opacity: 60;
+        background-color: #3d3d3d;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes image {
+    from{
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100;
+    }
+}
