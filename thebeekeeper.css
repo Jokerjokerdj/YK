@@ -4,20 +4,19 @@ body{
 }
 .sword1{
     position: fixed;
-    top:35%;
-    left:40%;
+    top:38%;
+    right: 35%;
     width: 230px;
     height: 200px;
     opacity: 60%;
     transform: rotate(180deg);
     animation: fadein 5s  infinite;
     z-index: -1000px;
-
 }
 .sword2{
     position: fixed;
-    top:35%;
-    right:39%;
+    top:38%;
+    right: 35%;
     width: 230px;
     height: 200px;
     transform: rotate(-80deg);
@@ -26,17 +25,133 @@ body{
     z-index: -1000px;
 
 }
-@media(max-width:763px){
-    .sword1{
-        left:30%;
+@media(min-width:475px){
+    .sword1,.sword2{
+        top:36%;
+        right: 32%;
     }
-    .sword2{
-        right: 29%;
+    .head{
+        font-size: 1rem;
+    }
+    .moo1,.moo1 img{
+         left:22%;
+    }
+    h4{
+        top:102vh;
+        left:4.9%;
+        font-size: 1.1rem;
+       }
+    .about{
+        top: 101vh;
+        left:29%;
+        font-size: 1rem;
+       }
+    .don{
+        top:150vh;
+        left:18%;
+        font-size: 1rem;
+       }
+    .don button{
+         left:29%;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 1.5rem;
+       }
+
+    .end{
+        position: relative;
+        background-color: blueviolet;
+        top:200vh;
+        padding: 5vh;
     }
 }
+@media(min-width:765px){
+    .sword1,.sword2{
+        top:50%;
+        right: 38%;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+    
+    .moo1,.moo1 img{
+        left:16%;
+        width: 40rem;
+        height: 59rem;
+   }
+   h4{
+    top:53vh;
+    left:4.9%;
+    font-size: 2rem;
+   }
+   .about{
+    top: 49vh;
+    left:29%;
+    font-size: 2.1rem;
+   }
+   .don{
+    top:82vh;
+    left:22%;
+    font-size: larger;
+   }
+   .don button{
+     left:19%;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 2.5rem;
+   }
+
+   
+   .end{
+    position: relative;
+    background-color: blueviolet;
+    top:90vh;
+    padding: 3vh;
+}
+}
+@media(min-width:1024px){
+    .sword1,.sword2{
+        top:36%;
+        right: 42%;
+    }
+    .head{
+        font-size: 1.1rem;
+    }
+    .moo1,.moo1 img{
+        left:37%;
+        width: 20rem;
+        height: 30rem;
+   }
+   h4{
+    top:94vh;
+    left:30%;
+    font-size: large;
+   }
+   .about{
+    top:95vh;
+    left:41%;
+    font-size: large;
+   }
+   .don{
+    top:143vh;
+    left:34.5%
+   }
+   .don button{
+     left:6.2em;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1.2rem;
+   }
+   
+   .end{
+    position: relative;
+    background-color: blueviolet;
+    top:160vh;
+    padding: 5vh;
+}
+
+}
+
 @keyframes fadein {
     from {
-        opacity: 60%;
+        opacity: 80%;
       }
       to {
         opacity: 40%;
@@ -49,50 +164,31 @@ body{
     justify-content: center;
     top:-20px;
     background-image:linear-gradient(to right top,blue,rgb(192, 24, 158));
-   
 }
 .head a{
     text-decoration: none;
 }
 .head h1 {
-    position: relative;
-    top: 7px;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+      position: relative;
+      top: 7px;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .moo1{   
     position: absolute;
-    left: 35%;
-    width: 400px;
-    height: 450px;
     border-radius: 15px;
     background-color: #333;
 }
 .moo1 img{
-    width: 400px;
-    height: 500px;
     border-radius: 15px;
-}
-@media (max-width:716px) {
-    .moo1{
-        left: 20%;
-    }
-}
-
-.main{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top:87vh;
-
 }
 
 h4{
     position: absolute;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- 
+    
 }
 .about{
     position: absolute;
@@ -101,20 +197,17 @@ h4{
     margin-top: 10vh;
 }
 .don{
-    position: relative;
-    top:50vh;
+    position: absolute;
     color: white;
 }
 .don button{
     position: relative;
-    margin-left: 25vh;
     padding: 12px;
     border-radius: 1rem;
     background-image: linear-gradient(to right,blue,rgb(195, 0, 255));
     border: none;
     color: rgb(255, 255, 255);
-    transition: all 0.5s;
-    left:-5vh;
+    transition: all 0.3s;
 }
 .don button:hover{
     cursor: pointer;
@@ -122,10 +215,4 @@ h4{
     opacity: 70%;
 }
 
-.end{
-    position: relative;
-    background-color: blueviolet;
-    padding: 5vh;
-    top:145vh;
-}
 
